@@ -2,7 +2,7 @@ BootStrap: busybox
 MirrorURL: https://www.busybox.net/downloads/binaries/1.26.1-defconfig-multiarch/busybox-x86_64
 
 %post
-    ln -s /.singularity.d/env/90-environment.sh /environment
+    echo "Hello from inside the container"
 
 %runscript
     echo "Running command: $*"
